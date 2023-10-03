@@ -1,0 +1,81 @@
+
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #862727;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown-content.active {
+  display: block;
+  max-height: 200px; /* Ajusta esta altura máxima según sea necesario */
+}
+
+
+
+.pagina2 {
+  /* border-right: 300px; */
+  width: 80% !important;
+  height: 530px !important;
+  
+  /* width: 400px;
+  height: 400px; */
+  
+    margin-left: 250px; /* Esto mueve el iframe hacia la derecha al máximo posible */
+    display: block; /* Asegura que el iframe ocupe todo el ancho disponible */
+    border: none;
+
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}

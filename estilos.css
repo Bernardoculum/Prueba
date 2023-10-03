@@ -1,0 +1,16 @@
+.pagina2 {
+    width: 100% !important;
+    height: 420px !important;
+}
+
+
+
+.division {
+    display: grid;
+    grid-template-columns: fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: red;
+ }

@@ -1,0 +1,30 @@
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Obtén referencias a los elementos del DOM
+    const mostrarIframe = document.getElementById("mostrarIframe");
+    const miIframe = document.getElementById("MostrarPagina2");
+
+     // Variable para controlar el estado del iframe
+     let iframeVisible = false; 
+
+    // Agrega un controlador de eventos para mostrar el iframe al hacer clic
+    mostrarIframe.addEventListener("click", function (event) {
+        event.preventDefault(); // Evita que el enlace recargue la página
+
+        if (iframeVisible) {
+            miIframe.style.display = "none"; // Oculta el iframe
+        } else {
+            miIframe.style.display = "block"; // Muestra el iframe
+        }
+        
+        // Invierte el estado del iframe
+        iframeVisible = !iframeVisible;
+    });
+    miIframe.style.display = "none";
+});
+
+
+$(document).ready( function () {
+    $('#miTabla').DataTable();
+});
